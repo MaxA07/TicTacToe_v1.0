@@ -9,11 +9,6 @@ import com.example.tictactoe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity()
 {
-    enum class Turn
-    {
-        NOUGHT,
-        CROSS
-    }
 
     private var firstTurn = Turn.CROSS
     private var currentTurn = Turn.CROSS
