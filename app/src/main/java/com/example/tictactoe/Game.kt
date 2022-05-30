@@ -7,6 +7,21 @@ import com.example.tictactoe.databinding.ActivityMainBinding
 
 class Game: GameAbility {
 
+    var boardList = mutableListOf<Button>()
+
+    override fun initBoard(binding: ActivityMainBinding)
+    {
+        boardList.add(binding.a1)
+        boardList.add(binding.a2)
+        boardList.add(binding.a3)
+        boardList.add(binding.b1)
+        boardList.add(binding.b2)
+        boardList.add(binding.b3)
+        boardList.add(binding.c1)
+        boardList.add(binding.c2)
+        boardList.add(binding.c3)
+    }
+
     override fun checkForVictory(binding: ActivityMainBinding, s: String): Boolean {
         //Horizontal Victory
         if(match(binding.a1,s) && match(binding.a2,s) && match(binding.a3,s))
@@ -33,16 +48,4 @@ class Game: GameAbility {
         return false
     }
 
-    override fun initBoard(binding: ActivityMainBinding) {
-        var boardList = mutableListOf<Button>()
-        boardList.add(binding.a1)
-        boardList.add(binding.a2)
-        boardList.add(binding.a3)
-        boardList.add(binding.b1)
-        boardList.add(binding.b2)
-        boardList.add(binding.b3)
-        boardList.add(binding.c1)
-        boardList.add(binding.c2)
-        boardList.add(binding.c3)
-    }
 }
