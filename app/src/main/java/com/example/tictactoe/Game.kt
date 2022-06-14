@@ -9,8 +9,7 @@ class Game: GameAbility {
 
     var boardList = mutableListOf<Button>()
 
-    override fun initBoard(binding: ActivityMainBinding)
-    {
+    override fun initBoard(binding: ActivityMainBinding) {
         boardList.add(binding.a1)
         boardList.add(binding.a2)
         boardList.add(binding.a3)
@@ -21,6 +20,8 @@ class Game: GameAbility {
         boardList.add(binding.c2)
         boardList.add(binding.c3)
     }
+
+    override fun match(button: Button, symbol : String): Boolean = button.text == symbol
 
     override fun checkForVictory(binding: ActivityMainBinding, s: String): Boolean {
         //Horizontal Victory
