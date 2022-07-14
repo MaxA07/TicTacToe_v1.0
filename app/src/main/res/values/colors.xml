@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_field">#3E5E9C</color>
     <color name="start_background">#BECDEC</color>
+    <color name="zeros_color">#D0E82C2C</color>
+    <color name="x_color">#A387EF88</color>
 </resources>

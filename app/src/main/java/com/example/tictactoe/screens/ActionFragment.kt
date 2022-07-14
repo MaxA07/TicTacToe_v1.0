@@ -1,5 +1,6 @@
 package com.example.tictactoe.screens
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
+import androidx.transition.TransitionInflater
 import com.example.tictactoe.Game
+import com.example.tictactoe.R
 import com.example.tictactoe.Turn
 import com.example.tictactoe.databinding.FragmentActionBinding
 
@@ -21,6 +24,12 @@ class ActionFragment : Fragment() {
 
     private var crossesScore = 0
     private var noughtsScore = 0
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val inflater = TransitionInflater.from(requireContext())
+        enterTransition = inflater.inflateTransition(R.transition.slide_right)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,7 +51,6 @@ class ActionFragment : Fragment() {
                 boardTapped(button)
             }
         }
-
     }
 
     private fun boardTapped(view: View)
@@ -114,6 +122,8 @@ class ActionFragment : Fragment() {
         return true
     }
 
+
+     @SuppressLint("ResourceAsColor")
      private fun addToBoard(button: Button)
     {
         if(button.text != "")

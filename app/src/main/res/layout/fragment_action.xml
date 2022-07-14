@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screens.ActionFragment"
-    android:background="@color/background_field"
+    android:background="#2a283d"
     android:id="@+id/actionScreen">
 
 
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
         android:text="@string/turn_x"
-        android:textColor="@color/black"
+        android:textColor="#f5e3a3"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -42,7 +42,8 @@
 
             <Button
                 android:id="@+id/a1"
-                style="@style/column" />
+                style="@style/column"
+                />
 
             <View
                 style="@style/verticalLine"/>

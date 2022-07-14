@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.StartScreen"
-    android:background="@color/background_field"
+    android:background="#C3EDAD"
     android:id="@+id/startScreen">
 
     <TextView
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:gravity="center"
         android:textSize="48sp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="80dp"/>
 
     <Button
         android:id="@+id/startGame"
@@ -30,6 +30,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/start_button"
         android:background="@drawable/background_button"
+        android:layout_marginTop="48dp"
+        android:textSize="35sp"
         />
 
 
