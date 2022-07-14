@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/TicTacToe_v1.0/app/src/main/res/drawable/background_button.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TicTacToe_v1.0/app/src/main/res/drawable/circle_off.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TicTacToe_v1.0/app/src/main/res/layout/activity_main.xml" value="0.35885416666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TicTacToe_v1.0/app/src/main/res/layout/batton_background.xml" value="0.35885416666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TicTacToe_v1.0/app/src/main/res/layout/fragment_action.xml" value="0.33636363636363636" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TicTacToe_v1.0/app/src/main/res/layout/fragment_start_screen.xml" value="0.35885416666666664" />
         <entry key="..\:/apps/TicTacToe1.0/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
       </map>
     </option>

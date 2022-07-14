@@ -1,15 +1,13 @@
 package com.example.tictactoe
 
-import android.graphics.ColorSpace.match
-import android.view.View
 import android.widget.Button
-import com.example.tictactoe.databinding.ActivityMainBinding
+import com.example.tictactoe.databinding.FragmentActionBinding
 
 class Game: GameAbility {
 
     var boardList = mutableListOf<Button>()
 
-    override fun initBoard(binding: ActivityMainBinding) {
+    override fun initBoard(binding: FragmentActionBinding) {
         boardList.add(binding.a1)
         boardList.add(binding.a2)
         boardList.add(binding.a3)
@@ -23,7 +21,7 @@ class Game: GameAbility {
 
     override fun match(button: Button, symbol : String): Boolean = button.text == symbol
 
-    override fun checkForVictory(binding: ActivityMainBinding, s: String): Boolean {
+    override fun checkForVictory(binding: FragmentActionBinding, s: String): Boolean {
         //Horizontal Victory
         if(match(binding.a1,s) && match(binding.a2,s) && match(binding.a3,s))
             return true
